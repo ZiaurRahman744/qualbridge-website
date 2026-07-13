@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-
     // Back To Top Button
 
     const backToTop = document.getElementById("backToTop");
@@ -55,6 +54,23 @@ document.addEventListener("DOMContentLoaded", function(){
                 behavior:"smooth"
 
             });
+
+        });
+
+    }
+
+
+    // Mobile Menu Toggle
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+
+    if(menuToggle && navMenu){
+
+        menuToggle.addEventListener("click", ()=>{
+
+            navMenu.classList.toggle("active");
 
         });
 
